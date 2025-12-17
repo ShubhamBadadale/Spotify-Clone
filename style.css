@@ -1,0 +1,152 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  /* to remove all the by default margin */
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  /* all the content inside the body will be hidden will unable to scroll */
+  overflow: hidden;
+}
+
+.main{
+    display: flex;
+
+    height: 100vh;
+    /* we need the whole viewport of the browser so we are giving whole viewport height to main  */
+}
+
+.sidebar{
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:#0c0b0b;
+    width:340px;
+    border-radius:1rem;
+}
+.main-content{
+    background-color:#121212;
+    flex:1;/*this property gives the feature to div that the space remained after giving to all the elements / members all the space is given to it */
+    overflow:auto;
+    border-radius:1rem;
+    color:aliceblue;
+
+}
+
+
+.music-player{
+    background-color:black;
+    position:fixed;
+    bottom:0;
+    width:100vw;
+    height:72px;
+
+}
+a{
+    text-decoration: none;/*to remove underline */
+    color:#fff;
+}
+.navbar{
+    background-color:#121212;
+    border-radius:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: centre;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+
+}
+.nav-options{
+    padding:10px;
+    justify-content : centre;
+    /* background-color:#121212; */
+    border-radius:1rem;
+    /* for the feature that will increase brightness when we hover ,
+     we reduce it when not hover */
+    opacity:0.7;
+    line-height:1 rem;
+    
+}
+.nav-options:hover{
+    opacity:1.5;
+    /* when hover , we will increase the brightnes of the options */
+}
+
+.nav-options  i {
+    /* for the icons used in nav-options */
+    font-size: 1.25rem;
+
+}
+
+.nav-options a{
+    /* for the achor tag in navbar */
+    font-size:1rem;
+    margin:0.5rem;/*to increase space between the icon and then anchor */
+}
+.library{
+    background-color:#121212;
+    margin-top:1rem;
+    border-radius:1rem;
+}
+.library-nav{
+    display:flex;
+    justify-content:space-between; 
+    align-items:center   
+}
+.library-nav i   {
+    font-size:1.25rem;
+    /* padding-top:0.2rem;
+    margin-right:1rem;
+    margin-top:0.8rem;    */
+}
+.library-nav img{
+    height:1.25rem;
+    width:1.25rem;
+    /* padding-top:0.2rem;
+    margin-right:1rem;
+    margin-top:0.8rem; */
+
+}
+.library{
+    padding:1rem;
+    font-family: "Montserrat", sans-serif;
+
+}
+.library p{
+    margin-right:4.5rem;
+}
+.library-body{
+     padding:top 1rem;
+    padding:left 1rem;
+    align-items:center;
+}
+
+.lib-create , .find-podcaste
+{
+    background-color:#302e2e;
+    border-radius:1rem;
+    height:9rem;
+    padding:top 1rem;
+    padding: 10px;
+    margin: 8px;
+    font-size:smaller;
+    line-height:1.5rem;
+
+}
+
+.find-podcaste{
+    height:11rem;
+}
+
+.lib-create a , .find-podcaste a{
+    background-color:#fff;
+    color:#000;
+    border-radius:1rem;
+    padding:0.5rem;
+    margin:0.8rem;
+}
+
+
