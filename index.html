@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class="main">
-    <div class="sidebar">
+    <div class="sidebar hide">
         <div class="navbar">
             <div class="nav-options" style="opacity:1.5"><!--when we see , only the search option is having opacity change when we hover-->
                 <i class="fa-solid fa-house"></i>
@@ -48,19 +48,48 @@
             </div>
             <div class="library-body">
                 <div class="lib-create">
-                    <b style="opacity:0.9"> <p  >Create your first playlist</p></b>
+                     <p class="p1" >Create your first playlist</p>
                     <p style="font-size :15px ">It's easy, we will help you!</p>
-                    <a href="https://www.google.com">Create playlist</a> 
+                    <button class="badge">Create playlist</button>
+                    <!-- <a href="https://www.google.com">Create playlist</a>  -->
                 </div>
                 <div class="find-podcaste">
-                    <b style="opacity:0.9"> <p  >Let's find some podcastes to follow</p></b>
+                     <p class="p1" >Let's find some podcastes to follow</p>
                     <p style="font-size :15px ">We'll keep you updated on new episodes </p>
-                    <a href="https://www.google.com">Browse podcaste</a>
+                    <button class="badge">Browse podcaste</button>
+                    <!-- <a href="https://www.google.com">Browse podcaste</a> -->
                 </div>
             </div>
         </div>
     </div>
-    <div class="main-content">main-content</div>
+    <div class="main-content">
+        <div class="sticky-nav">
+            <div class="left">
+                <img src="./images/backward_icon.png" alt="">
+                <img src="./images/forward_icon.png" alt="" class="hide">
+            </div>
+            <div class="right">
+                <button class="badge hide">Explore Premium</button>
+                <div class="installapp">
+                    <button class="badge dark"><i class="fa-regular fa-circle-down"></i>Install App</button>
+
+                </div>
+                
+                <div class="profile">
+                    <i class="fa-solid fa-circle-user" ></i>
+                </div>
+                
+            </div>
+        
+        
+        </div>
+
+        <div class="albums">
+           
+        </div>
+        
+
+    </div>
     <div class="music-player">music-player
 
        
